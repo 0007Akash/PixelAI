@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='flex flex-col md:flex-row  md:items-center gap-1 mr-10'>
                 <div className='flex items-center gap-1 mr-10'>
                     <img src={assets.logo_icon} alt="logo" className='w-8 sm:w-9 lg:w-10' />
-                    <p className=' sm:text-xl md:text-2xl font-semibold font-mono'>PixelAI</p>
+                    <p className=' sm:text-xl md:text-2xl font-semibold font-mono'>GenPixelAI</p>
                 </div>
                 <p className='border-l-2 border-none md:border-[#6f6f6f] text-[#6f6f6f] md:pl-10'>All right reserved. Copyright @PixelAI</p>
             </div>

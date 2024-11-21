@@ -68,21 +68,21 @@ export const testimonialsData = [
     name: "Donald Jackman",
     role: "Graphic Designer",
     stars: 5,
-    text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`,
+    text: `I've been using GenPixelAI for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`,
   },
   {
     image: profile_img_2,
     name: "Richard Nelson",
     role: "Content Creator",
     stars: 4,
-    text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`,
+    text: `I've been using GenPixelAI for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`,
   },
   {
     image: profile_img_1,
     name: "James Washington",
     role: "Co-Founder",
     stars: 5,
-    text: `I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`,
+    text: `I've been using GenPixelAI for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`,
   },
 ];
 
@@ -96,13 +96,13 @@ export const plans = [
   {
     id: "Advanced",
     price: 50,
-    credits: 500,
+    credits: 550,
     desc: "Best for business use.",
   },
   {
     id: "Business",
-    price: 250,
-    credits: 5000,
+    price: 100,
+    credits: 1100,
     desc: "Best for enterprise use.",
   },
 ];

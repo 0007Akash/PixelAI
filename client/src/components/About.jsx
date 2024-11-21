@@ -1,14 +1,19 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import GenerateButton from './GenerateButton'
+import { motion } from "motion/react"
 
 const About = () => {
     return (
         <div>
 
-            <div className='flex flex-col sm:flex-col md:flex-row items-center justify-center py-10 sm:py-20 mt-3 md:mt-5 lg:mt-10 gap-5 sm:gap-2 md:gap-10 '>
+            <div
+                className='flex flex-col sm:flex-col md:flex-row items-center justify-center py-10 sm:py-20 mt-3 md:mt-5 lg:mt-10 gap-5 sm:gap-2 md:gap-5 '>
                 <div className="md:w-1/2 sm:w-full w-full flex items-center justify-center relative overflow-hidden group">
-                    <img
+                    <motion.img
+                        initial={{ scale: 0.2, opacity: 0.2 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1 }}
                         className="w-full rounded-xl"
                         src={assets.sample_img_1}
                         alt="Sample"
@@ -26,9 +31,17 @@ const About = () => {
                 </div>
 
                 <div className='md:w-1/2 sm:w-full w-full '>
-                    <p className='text-3xl sm:text-3xl md:text-4xl'>Introducing the AI-Powered Text to Image Generator</p>
-                    <p className='text-[#6f6f6f] py-7'>
-                        Experience the future of creativity with our AI-Powered Text to Image Generator. Turn your ideas, phrases, or descriptions into stunning, high-quality visuals in just seconds. Whether you're a designer, content creator, or someone with a vision, this cutting-edge tool makes transforming words into art effortless and fun.</p>
+                    <motion.p
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className='text-xl sm:text-2xl md:text-3xl'>Introducing the AI-Powered Text to Image Generator</motion.p>
+                    <motion.p
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className='text-[#6f6f6f] py-4 sm:py-1 lg:py-7 '>
+                        Experience the future of creativity with our AI-Powered Text to Image Generator. Turn your ideas, phrases, or descriptions into stunning, high-quality visuals in just seconds. Whether you're a designer, content creator, or someone with a vision, this cutting-edge tool makes transforming words into art effortless and fun.</motion.p>
                     <GenerateButton />
                 </div>
 
