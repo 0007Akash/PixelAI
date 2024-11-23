@@ -9,7 +9,7 @@ const WorkingSteps = () => {
                 Transform your ideas and words into stunning, visually captivating images.</p>
             <div className='flex flex-col items-center justify-center gap-5'>
                 {stepsData.map((item, index) => (
-                    <motion.div
+                    <motion.div key={index}
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5 }}

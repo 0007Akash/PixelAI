@@ -38,7 +38,7 @@ const Home = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         className='absolute bottom-[-15%] bg-white w-[100%] lg:w-[70%] h-[25%] rounded-xl shadow-md flex items-center justify-around'>
                         {images.map((image, index) => (
-                            <div className='w-[80px] h-[70px] transition-all duration-500 hover:scale-110'>
+                            <div key={index} className='w-[80px] h-[70px] transition-all duration-500 hover:scale-110'>
                                 <img onClick={() => setImage(image)} className='w-full h-full rounded-lg' src={image} alt="" />
                             </div>
                         ))}
