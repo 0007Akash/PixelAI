@@ -9,7 +9,16 @@ const PORT = process.env.PORT || 4001;
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+const corsOptions = {
+  origin: "https://genpixelai.onrender.com", // Your frontend origin
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
+  allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+  credentials: true, // Necessary if cookies or credentials are being used
+};
+app.use(cors(corsOptions)); // Apply CORS settings
+
+app.options("*", cors(corsOptions)); // Handle preflight requests
 
 await connectDB();
 
