@@ -13,7 +13,7 @@ app.use(express.json());
 const corsOptions = {
   origin: "https://genpixelai.onrender.com", // Your frontend origin
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
-  allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+  allowedHeaders: ["Content-Type", "Authorization", "token"], // Specify allowed headers
   credentials: true, // Necessary if cookies or credentials are being used
 };
 app.use(cors(corsOptions)); // Apply CORS settings
